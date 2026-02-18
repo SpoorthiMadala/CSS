@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <style>
+    body{
+      margin:0px;
+      padding:0px;
+    }
+  
+    header{
+      width:100%;
+      color:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background-color:#2c3e50;
+      box-sizing:border-box;
+      padding:0rem 2.5%;
+    }
+    nav{
+      width:30%;
+      position:relative;
+      left:8%;
+
+    }
+    ul a{
+      text-decoration:none;
+      color:white;
+      padding:0 4.5%;
+    }
+    ul a:hover{
+      text-decoration:underline;
+    }
+    input{
+      padding:8% 0%;
+      border:0px;
+      border-radius:3%;
+    }
+    .icon{
+      font-size:250%;
+      position:relative;
+      top:0.6rem;
+      right:-0.6rem
+    }
+    main{
+      background-color:#f5f5f5;
+      display:flex;
+      width:100%;
+      justify-content:space-between;
+      box-sizing:border-box;
+      color:#333;
+      font-family:Arial, sans-serif;
+      
+    }
+    .sidebar{
+      width:25%;
+      box-sizing:border-box;
+      background-color:#fff;
+      margin:2.5% 2.5% 6% 2.5%;
+      padding:3% 0 0 2%;
+      border-radius:5%;
+      box-shadow:rgba(0, 0, 0, 0.1);
+      color:#3498db;
+      
+    }
+    .sidebar li:hover{
+      color:#2980b9;
+    }
+    .card{
+      background-color:#f5f5f5;
+      box-sizing:border-box;
+      width:70%;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      text-align:center;
+      
+    }
+    .item{
+      width:25%;
+      height:35%;
+      background-color:white;
+      box-shadow:0.1px 0.1px 3px lightgray;
+      border-radius:4%;
+      padding:2% 2%;
+      margin:3.5% 2% 0% 2%;
+      cursor:pointer;
+      
+      
+    }
+    .item:hover{
+      box-shadow:0.4px 0.4px 3px 1px black;
+    }
+    img{
+      width:100%;
+      height:65%;
+      border-radius:3%;
+      
+    }
+    li{
+      list-style-type:none;
+      
+      font-weight:700;
+      padding:0 0 3% 0;
+    }
+    .bottom{
+      margin:-5% 2% 0% 2%;
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+
+    }
+    
+    
+
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Sneaker Shop</h1>
+  <nav>
+    <ul>
+      <a href="men">Men</a>
+      <a href="women">Women</a>
+      <a href="kids">Kids</a>
+    </ul>
+  </nav>
+  <span><input type="text" placeholder=" search"/> <span class="icon">🛒</span></span>
+  </header>
+  <main>
+  <ul class="sidebar">
+    <li>Lifestyle</li>
+    <li>Basketball</li>
+    <li>Jordan</li>
+    <li>Skateboarding</li>
+  </ul>
+  <div class="card">
+    <div onclick="location.href='aeromax.html'" class="item">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe-5_TI5N23Jma.jpg?updatedAt=1729781054625"/>
+    <h3>AeroMax Flex</h3>
+    <p>₹ 10,499</p>
+  </div>
+  
+  <div onclick="location.href='urban-stride-pro.html'" class="item">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe-3_L2Ak1ha8Eq.jpg?updatedAt=1729781054564"/>
+    <h3>Urban Stride Pro</h3>
+    <p>₹ 12,999</p>
+  </div>
+  
+ 
+  <div onclick="location.href='velocity-pulse-x.html'" class="item">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe-1__X1F5iDi5I.jpg?updatedAt=1729781054468"/>
+    <h3>Velocity Pulse X</h3>
+    <p>₹ 11,999</p>
+  </div>
+  
+
+  <div onclick="location.href='edgerider-sport.html'" class="item bottom">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe-4_vBwVHSEFxK.jpg?updatedAt=1729781054508"/>
+    <h3>EdgeRider Sport</h3>
+    <p>₹ 9,499</p>
+  </div>
+  <div onclick="location.href='horizon-runner-pro.html'" class="item bottom">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe-2_Tkv8dXUKvi.jpg?updatedAt=1729781054313"/>
+    <h3>Horizon Runner Pro</h3>
+    <p>₹ 14,999</p>
+  </div>
+  <div onclick="location.href='action-hyper-high.html'" class="item bottom">
+    <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/shoe7_j0ZgFj32j.jpg?updatedAt=1728889629384"/>
+    <h3>Action Hyper High</h3>
+    <p>₹ 13,995</p>
+  </div>
+  </div>
+  </main>
+  
+
+</body>
+</html>
