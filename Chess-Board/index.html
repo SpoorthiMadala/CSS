@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Board</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{
+margin:0;
+padding:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background-color:#6B98E1;
+color:white;
 
+
+
+}
+h1{
+    
+    
+    text-align:center;
+    padding:5vh;
+    
+    
+}
+
+
+
+.board{
+display:grid;
+width:70vw;
+height:70vh;
+grid-template-columns:repeat(8,1fr);
+margin:auto;
+
+
+
+}
+
+.square{
+
+display:grid;
+align-items:center;
+
+border:0px;
+
+
+
+}
+
+.square:nth-child(odd){
+    background:gray;
+}
+.square:nth-child(even){
+    background:white;
+}
+
+
+.white-piece{
+    color:#ffffff;
+    margin:auto;
+    text-shadow:6px 6px 4px rgba(0,0,0,0.5);
+}
+.black-piece{
+    color:#000000;
+    margin:auto;
+    text-shadow:6px 6px 4px rgba(0,0,0,0.5);
+}
+.one{
+    border-top-left-radius:30px;
+}
+.two{
+    border-top-right-radius:30px;
+}
+.three{
+    border-bottom-left-radius:30px;
+}
+.four{
+    border-bottom-right-radius:30px;
+}
+
+.board div:nth-child(16n+1),
+.board div:nth-child(16n+3),
+.board div:nth-child(16n+5),
+.board div:nth-child(16n+7),
+.board div:nth-child(16n+10),
+.board div:nth-child(16n+12),
+.board div:nth-child(16n+14),
+.board div:nth-child(16n+16){
+    background: gray;
+}
+
+.board div:nth-child(16n+2),
+.board div:nth-child(16n+4),
+.board div:nth-child(16n+6),
+.board div:nth-child(16n+8),
+.board div:nth-child(16n+9),
+.board div:nth-child(16n+11),
+.board div:nth-child(16n+13),
+.board div:nth-child(16n+15){
+    background: white;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Chess Board</h1>
+
+
+<div class="board">
+
+<div class="square one"><i class="fa-solid fa-chess-rook white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square two"><i class="fa-solid fa-chess-rook black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-knight white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-knight black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-bishop white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-bishop black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-queen white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-queen black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-king white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-king black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-bishop white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-bishop black-piece"></i></div>
+
+<div class="square"><i class="fa-solid fa-chess-knight white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-knight black-piece"></i></div>
+
+<div class="square three"><i class="fa-solid fa-chess-rook white-piece"></i></div>
+<div class="square"><i class="fa-solid fa-chess-pawn white-piece"></i></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"><i class="fa-solid fa-chess-pawn black-piece"></i></div>
+<div class="square four"><i class="fa-solid fa-chess-rook black-piece"></i></div>
+
+
+</div>
+
+</body>
+</html>
